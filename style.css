@@ -1,0 +1,46 @@
+/*
+Theme Name:   WhoAmI
+Description:  WhoAmI Child Theme
+Author:       Kyle Michael Sullivan, Esquire
+Author URI:   https://kylemichaelsullivan.com/
+Template:     underwind
+Version:      1.0
+License:      GNU General Public License v3 or later
+License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+Tags:         light, dark, single-page-application, responsive-layout, accessibility-ready
+Text Domain:  whoami
+*/
+
+:root {
+	--color-primary: #d62828;
+	--color-accent: #003049;
+	--color-white: #ffffff;
+	--color-black: #000000;
+}
+
+a,
+a:visited {
+	cursor: pointer;
+	color: var(--color-primary);
+	transition: color 200ms ease-in;
+}
+
+a:hover,
+a:focus-visible {
+	color: var(--color-primary);
+	text-decoration: underline;
+}
+
+.combo-link:hover,
+.combo-link:focus-visible {
+	text-decoration: none;
+}
+
+.combo-link:hover span,
+.combo-link:focus-visible span {
+	text-decoration: underline;
+}
+
+.w-full.mx-auto {
+	max-width: 75rem;
+}

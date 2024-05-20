@@ -1,0 +1,7 @@
+.acf-postbox .handle-actions > :not(.handlediv) {
+	display: none !important;
+}
+
+.acf-repeater .acf-repeater .acf-field {
+	padding: 0;
+}

@@ -1,0 +1,26 @@
+# Ignore node modules
+node_modules/
+
+# Ignore various system files
+.DS_Store
+Thumbs.db
+
+# Ignore all log files
+*.log
+
+# Ignore Composer files
+/vendor/
+/composer.lock
+
+# Ignore the wp-config.php file if it's in the theme directory
+/wp-config.php
+
+# Ignore specific theme files that may contain sensitive information
+config.rb
+.sass-cache
+
+# Ignore OS-specific files
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
