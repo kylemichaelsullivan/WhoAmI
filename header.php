@@ -30,7 +30,7 @@
 	<a href="#primary" class="skip-link screen-reader-text"><?php esc_html_e( 'Skip to content', 'whoami' ); ?></a>
 
 	<header class="site-header sticky border-b border-black" id="masthead">
-		<div class="site-branding flex justify-between items-center p-4">
+		<div class="site-branding flex flex-col justify-between items-center p-4 sm:flex-row">
 			<h1 class="site-title text-2xl">
 				<?php echo $site_title_link; ?>
 			</h1>
