@@ -10,6 +10,7 @@
 
 <?php
 $sections = array(
+	'summary',
 	'skills',
 	'knowledge',
 	'experience',

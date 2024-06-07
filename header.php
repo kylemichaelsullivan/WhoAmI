@@ -21,6 +21,22 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://gmpg.org/xfn/11" rel="profile">
+	<meta name="description" content="Attorney & Full-Stack Developer">
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://kylemichaelsullivan.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Kyle Michael Sullivan">
+	<meta property="og:description" content="Attorney & Full-Stack Developer">
+	<meta property="og:image" content="https://kylemichaelsullivan.com/wp-content/uploads/2024/05/Kyle-Michael-Sullivan.jpeg">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="kylemichaelsullivan.com">
+	<meta property="twitter:url" content="https://kylemichaelsullivan.com">
+	<meta name="twitter:title" content="Kyle Michael Sullivan">
+	<meta name="twitter:description" content="Attorney & Full-Stack Developer">
+	<meta name="twitter:image" content="https://kylemichaelsullivan.com/wp-content/uploads/2024/05/Kyle-Michael-Sullivan.jpeg">
 	<?php wp_head(); ?>
 </head>
 

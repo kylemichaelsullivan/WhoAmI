@@ -826,6 +826,10 @@ video {
   width: 100%;
 }
 
+.max-w-6xl {
+  max-width: 72rem;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -2487,6 +2491,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
