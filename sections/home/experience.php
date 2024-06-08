@@ -15,24 +15,24 @@
 			<div class="w-full mx-auto">
 				<?php while( have_rows( 'job' ) ): the_row(); ?>
 					<?php if( get_sub_field('title') || get_sub_field('dates') || get_sub_field('company') || get_sub_field('location') ) : ?>
-						<div class="flex flex-col pt-2 pb-4">
-							<?php if( get_sub_field('title') || get_sub_field('dates') ) : ?>
-								<div class="flex justify-between">
-									<?php
-										printf( '<h3 class="text-2xl">%s</h3>', get_sub_field('title') );
-										printf( '<h4 class="text-xl">%s</h4>', get_sub_field('dates') );
-									?>
-								</div>
-							<?php endif; ?>
+						<div class="flex flex-col flex-wrap justify-between gap-2 pt-2 pb-4 sm:flex-row sm:gap-0 sm:items-center">
+							<?php
+								if( get_sub_field('title') ) {
+									printf( '<h3 class="text-2xl sm:order-1 sm:w-7/12">%s</h3>', get_sub_field('title') );
+								}
 
-							<?php if( get_sub_field('company') || get_sub_field('location') ) : ?>
-								<div class="flex justify-between">
-									<?php
-										printf( '<h4 class="text-xl">%s</h4>', get_sub_field('company') );
-										printf( '<h4 class="text-xl">%s</h4>', get_sub_field('location') );
-									?>
-								</div>
-							<?php endif; ?>
+								if( get_sub_field('company') ) {
+									printf( '<h4 class="text-xl pl-1 sm:order-3 sm:w-1/2 sm:pl-0">%s</h4>', get_sub_field('company') );
+								}
+								
+								if( get_sub_field('dates') ) {
+									printf( '<h4 class="text-xl pl-1 sm:order-2 sm:text-right sm:w-5/12 sm:pl-0">%s</h4>', get_sub_field('dates') );
+								}
+								
+								if( get_sub_field('location') ) {
+									printf( '<h4 class="text-xl pl-1 sm:order-4 sm:text-right sm:w-1/2 sm:pl-0">%s</h4>', get_sub_field('location') );
+								}
+							?>
 						</div>
 					<?php endif; ?>
 
